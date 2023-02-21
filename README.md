@@ -28,7 +28,7 @@ module.exports = override(
 );
 ```
 
-7. To test if it works, create an AppStyle.ts file:
+7. To test if it works, create an AppStyle.ts file in the src directory:
 ```
 import styled, { css } from "styled-components";
 
