@@ -4,15 +4,16 @@ Scaffold a project with react, typescript, styled and debug tools
 
 1. yarn create react-app mycoolapp --template typescript
 > (or alternatively: npx create-react-app mycoolapp --template typescript)
-2. yarn add styled-components
-3. yarn add @types/styled-components react-app-rewired customize-cra babel-plugin-styled-components --dev
-4. update package.json to use react-app-rewired
+2. cd mycoolapp
+3. yarn add styled-components
+4. yarn add @types/styled-components react-app-rewired customize-cra babel-plugin-styled-components --dev
+5. update package.json to use react-app-rewired
 ```
 "start": "react-app-rewired start",
 "build": "react-app-rewired build",
 "test": "react-app-rewired test",
 ```
-5. Create config-override.js in the root of the project with the following content:
+6. Create config-override.js in the root of the project with the following content:
 ```
 const { override, addBabelPlugin } = require("customize-cra");
 
@@ -27,7 +28,7 @@ module.exports = override(
 );
 ```
 
-6. To test if it works, create an AppStyle.ts file:
+7. To test if it works, create an AppStyle.ts file:
 ```
 import styled, { css } from "styled-components";
 
@@ -59,7 +60,7 @@ const Button = styled.a<ButtonProps>`
 export { Button };
 ```
 
-7. Update App.tsx to match:
+8. Update App.tsx to match:
 ```
 import { Button } from "./AppStyle";
 
