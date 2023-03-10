@@ -13,7 +13,7 @@ Scaffold a project with react, typescript, styled and debug tools
 "build": "react-app-rewired build",
 "test": "react-app-rewired test",
 ```
-6. Create config-override.js in the root of the project with the following content:
+6. Create config-overrides.js in the root of the project with the following content:
 ```
 const { override, addBabelPlugin } = require("customize-cra");
 
